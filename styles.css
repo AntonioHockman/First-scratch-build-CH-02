@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+    
+}
+header{
+    
+    display:block;
+    color:white;
+    background-color:rgb(173, 199, 230);
+}
+
+.nav-bar h2{
+    display:inline-block;
+    float:right;
+    margin: 10px;
+}
+.pic-of-me{
+    margin-left: 600px;
+    padding:20px;
+    border:solid blue;
+    color:blue;
+
+}
+@media screen
+
+p{
+    font-size: larger;
+}
+#about-me{
+    padding:20px;
+    border:solid blue;
+    color:blue;
+}
+#about-me:hover::after{
+
+}
