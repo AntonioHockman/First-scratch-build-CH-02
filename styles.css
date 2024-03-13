@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: lightgray;
+    background-color: rgb(173, 199, 230);
+    font-family: Arial;
+    margin: 0;
     
 }
 header{
@@ -11,29 +13,85 @@ header{
     color:white;
     background-color:rgb(173, 199, 230);
 }
-
+.h1-center{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    }
 .nav-bar h2{
-    display:inline-block;
-    float:right;
-    margin: 10px;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+
 }
+
+
 .pic-of-me{
-    margin-left: 600px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
     padding:20px;
     border:solid blue;
     color:blue;
 
 }
-@media screen
 
-p{
-    font-size: larger;
-}
+ .A-M {
+    font-size: 30px;
+ }
+
 #about-me{
     padding:20px;
     border:solid blue;
     color:blue;
 }
-#about-me:hover::after{
-
+.sponge{
+    float:right;
 }
+.honduranFlag{
+    float:right;
+}
+
+#work{
+    display:flex;
+    flex:wrap;
+}
+#work {
+    font-size:30px;
+    padding:20px;
+    border:solid blue;
+    color:blue;
+    
+}
+.img-container{
+   float:left;
+   width:50%;
+   padding:5px;
+
+  }
+  
+.pre-workSC{
+    height:500px;
+    width:500px;
+    border:solid red;
+   
+}
+.pre-workSC, #imgLabel {
+    margin-left:100px;
+}
+
+.first-hw{
+    height:500px;
+    width:500px;
+    border:solid red;
+}
+.first-hw, #imgLabel{
+    margin-left:100px;
+}
+@media screen and (max-width: 1000px) {
+    #work{
+      flex-direction: column;
+    }
+  }
+  
