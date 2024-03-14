@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 body{
     background-color: rgb(173, 199, 230);
     font-family: Arial;
@@ -13,11 +10,13 @@ header{
     color:white;
     background-color:rgb(173, 199, 230);
 }
+/*this centers my header*/
 .h1-center{
     display:flex;
     justify-content: center;
     align-items:center ;
     }
+    /* centers my nav bar*/
 .nav-bar h2{
     display:flex;
     justify-content: center;
@@ -25,7 +24,7 @@ header{
 
 }
 
-
+/*centers my photo and keeps it centered when screen shrinks*/
 .pic-of-me{
     display:block;
     margin-left:auto;
@@ -41,22 +40,27 @@ header{
     font-size: 30px;
  }
 
+/*wraps section belowin a border*/
 #about-me{
     padding:20px;
     border:solid blue;
     color:blue;
 }
+/*images i wanted to float to the right of my paragraph*/
 .sponge{
     float:right;
 }
 .honduranFlag{
     float:right;
 }
+/*images i wanted to float to the right of my paragraph*/
+
 
 #work{
     display:flex;
     flex:wrap;
 }
+/*wraps section below in a border*/
 #work {
     font-size:30px;
     padding:20px;
@@ -64,12 +68,12 @@ header{
     color:blue;
     
 }
+/*lines images side by side each taking half of the space*/
 .img-container{
    float:left;
    width:50%;
    padding:5px;
-
-  }
+    }
   
 .pre-workSC{
     height:500px;
@@ -77,21 +81,46 @@ header{
     border:solid red;
    
 }
+/*makes sure label is under the photo and follows it*/
 .pre-workSC, #imgLabel {
     margin-left:100px;
 }
 
 .first-hw{
-    height:500px;
-    width:500px;
+    height:400px;
+    width:400px;
     border:solid red;
 }
+/*makes sure label is under the photo and follows it*/
 .first-hw, #imgLabel{
     margin-left:100px;
 }
+  /*re-adjusts the images into collums once screen is too small*/
+
 @media screen and (max-width: 1000px) {
     #work{
       flex-direction: column;
+        }
     }
+
+/*wraps section belowin a border*/
+  #contact-info{
+    font-size:30px;
+    padding:20px;
+    border:solid blue;
+    color:blue;
+
   }
-  
+  #footerlist{
+    display:flex;
+    flex:wrap;
+  }
+  /*re-adjusts the list into collums once screen is too small*/
+  @media screen and (max-width: 1000px) {
+    #footerlist{
+      flex-direction: column;
+        }
+    }
+  #footerlist li{
+    margin-left:30px;  
+  }
