@@ -2,8 +2,21 @@ body{
     background-color: rgb(173, 199, 230);
     font-family: Arial;
     margin: 0;
-    
+    font-size:30px;
 }
+@media only screen and (max-width:1500px) {
+    body {
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:1500px) {
+    footer {
+        font-size:20px;
+    }
+}
+
+
+
 header{
     
     display:block;
@@ -36,9 +49,7 @@ header{
 
 }
 
- .A-M {
-    font-size: 30px;
- }
+
 
 /*wraps section belowin a border*/
 #about-me{
@@ -50,19 +61,36 @@ header{
 .sponge{
     float:right;
 }
+@media screen and (max-width:1500px) {
+    .sponge{
+        float:none;
+    }
+}
+
 .honduranFlag{
     float:right;
 }
+@media screen and (max-width: 1500px) {
+    .honduranFlag{
+        float: none;
+    }
+}
+@media screen and (max-width:1300px){
+    img {
+        display:flex;
+    }
+}
+
 /*images i wanted to float to the right of my paragraph*/
 
 
 #work{
     display:flex;
-    flex:wrap;
+    
 }
 /*wraps section below in a border*/
 #work {
-    font-size:30px;
+
     padding:20px;
     border:solid blue;
     color:blue;
@@ -97,7 +125,7 @@ header{
 }
   /*re-adjusts the images into collums once screen is too small*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     #work{
       flex-direction: column;
         }
@@ -105,7 +133,6 @@ header{
 
 /*wraps section belowin a border*/
   #contact-info{
-    font-size:30px;
     padding:20px;
     border:solid blue;
     color:blue;
@@ -116,7 +143,7 @@ header{
     flex:wrap;
   }
   /*re-adjusts the list into collums once screen is too small*/
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     #footerlist{
       flex-direction: column;
         }
